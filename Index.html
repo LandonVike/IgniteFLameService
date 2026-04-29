@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ignite Flame Services - Professional HVAC Heating &amp; Cooling in Greater Vancouver. Furnace repair, boiler service, tankless hot water heaters, heat pumps, air conditioning &amp; more since 2005.">
+    <title>Ignite Flame Services | HVAC Heating &amp; Cooling | Greater Vancouver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --tw-color-primary: #f59e0b;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tailwind-ready .hero-bg {
+            background: linear-gradient(90deg, #f59e0b 0%, #c2410f 100%);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #f59e0b;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #f59e0b, #c2410f);
+            bottom: -8px;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="tailwind-ready">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-orange-500 rounded-2xl flex items-center justify-center text-white text-3xl shadow-inner">
+                        🔥
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-2xl tracking-tighter text-gray-900" style="font-family: 'Space Grotesk', sans-serif;">Ignite Flame</h1>
+                        <p class="text-[10px] text-orange-600 -mt-1 font-medium tracking-[1px]">SERVICES</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#services" class="nav-link text-gray-700 hover:text-orange-600">Services</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-orange-600">About Us</a>
+                    <a href="#areas" class="nav-link text-gray-700 hover:text-orange-600">Areas Served</a>
+                    <a href="#blog" class="nav-link text-gray-700 hover:text-orange-600">Blog</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-orange-600">Contact</a>
+                </div>
+
+                <!-- Phone & CTA -->
+                <div class="flex items-center gap-x-4">
+                    <a href="tel:6047161847" 
+                       class="flex items-center gap-x-2 bg-white border border-orange-200 hover:border-orange-300 text-orange-600 px-4 py-2 rounded-3xl text-sm font-semibold shadow-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="hidden sm:inline">(604) 716-1847</span>
+                    </a>
+                    
+                    <a href="#contact" 
+                       class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-3xl text-sm font-semibold flex items-center gap-x-2 shadow-lg shadow-orange-500/30">
+                        <span>Get Free Quote</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center text-2xl text-gray-700">
+                        <i class="fa-solid fa-bars" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t py-4 px-6 text-sm font-medium space-y-4">
+                <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-gray-700">Services</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-gray-700">About Us</a>
+                <a href="#areas" onclick="toggleMobileMenu()" class="block py-2 text-gray-700">Areas Served</a>
+                <a href="#blog" onclick="toggleMobileMenu()" class="block py-2 text-gray-700">Blog</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-gray-700">Contact</a>
+                <div class="pt-4 border-t">
+                    <a href="tel:6047161847" class="flex items-center justify-center gap-x-3 text-orange-600 font-semibold">
+                        <i class="fa-solid fa-phone"></i>
+                        Call (604) 716-1847
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg text-white">
+        <div class="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center bg-white/20 backdrop-blur-md text-white text-sm font-medium px-5 py-2 rounded-3xl border border-white/30">
+                    <i class="fa-solid fa-star mr-2"></i>
+                    5/5 on Google • Rated by our customers
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-semibold leading-none tracking-tighter" style="font-family: 'Space Grotesk', sans-serif;">
+                    Need Professional<br>HVAC Heating or<br>Cooling Services?
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-orange-100 max-w-lg">
+                    Since 2005, Ignite Flame Heating and Air Conditioning LLP has performed repairs, servicing, and installations for furnaces, boilers, hot water heaters, gas fireplaces and air conditioners in the Greater Vancouver area.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="tel:6047161847" 
+                       class="flex-1 md:flex-none bg-white text-orange-600 hover:bg-amber-50 px-8 py-5 rounded-3xl text-xl font-semibold flex items-center justify-center gap-x-3 shadow-xl">
+                        <i class="fa-solid fa-phone"></i>
+                        CALL (604) 716-1847
+                    </a>
+                    
+                    <a href="#contact" 
+                       class="flex-1 md:flex-none border-2 border-white hover:bg-white/10 text-white px-8 py-5 rounded-3xl text-xl font-semibold flex items-center justify-center gap-x-3">
+                        GET A FREE QUOTE
+                    </a>
+                </div>
+                
+                <p class="text-sm text-orange-100 flex items-center gap-x-2">
+                    <i class="fa-solid fa-check-circle"></i>
+                    24/7 Emergency Service • Licensed &amp; Insured • Same-Day Appointments Available
+                </p>
+                
+                <div class="flex items-center gap-x-8 text-sm">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-medal text-4xl mr-3"></i>
+                        <div>
+                            <div class="font-semibold">5/5 Google Rating</div>
+                            <div class="text-orange-100 text-xs">Port Coquitlam • Port Moody • Maple Ridge • Burnaby • Vancouver &amp; more</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero visual -->
+            <div class="relative hidden md:block">
+                <div class="bg-white/10 backdrop-blur-3xl border border-white/30 rounded-3xl p-8 shadow-2xl">
+                    <div class="bg-white text-gray-900 rounded-2xl p-8 text-center">
+                        <div class="text-6xl mb-4">🔥❄️</div>
+                        <h3 class="text-3xl font-semibold mb-2">No Heat? No Problem!</h3>
+                        <p class="text-lg text-gray-600">Expert HVAC technicians ready 24/7</p>
+                        <div class="mt-8 grid grid-cols-3 gap-4 text-sm font-medium">
+                            <div class="bg-orange-100 text-orange-600 rounded-2xl py-3">Furnace Repair</div>
+                            <div class="bg-blue-100 text-blue-600 rounded-2xl py-3">Heat Pump Install</div>
+                            <div class="bg-amber-100 text-amber-600 rounded-2xl py-3">Tankless Water Heaters</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating badge -->
+                <div class="absolute -top-6 -right-6 bg-white text-orange-600 text-center rounded-3xl px-6 py-4 shadow-xl flex flex-col items-center rotate-12">
+                    <div class="text-4xl">⭐⭐⭐⭐⭐</div>
+                    <p class="text-xs font-semibold tracking-widest">GOOGLE REVIEWS</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES OVERVIEW -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="px-4 py-2 bg-orange-100 text-orange-600 rounded-3xl text-sm font-semibold">SERVICES OFFERED</span>
+                <h2 class="text-4xl font-semibold mt-4 tracking-tight">Expert HVAC Solutions for Your Home</h2>
+                <p class="mt-3 max-w-md mx-auto text-gray-600">From installation to repair and maintenance — we handle it all.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Service cards -->
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-fire text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Furnace Repair</h4>
+                    <p class="text-sm text-gray-500">Fast, reliable furnace repair</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-tools text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Furnace Service</h4>
+                    <p class="text-sm text-gray-500">Annual maintenance &amp; tune-ups</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-house-fire text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Furnace Installation</h4>
+                    <p class="text-sm text-gray-500">New high-efficiency systems</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-water text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Tankless Repair</h4>
+                    <p class="text-sm text-gray-500">On-demand hot water fixes</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-shower text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Hot Water Tank Installation</h4>
+                    <p class="text-sm text-gray-500">Tank &amp; tankless options</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-temperature-water text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Hot Water Heater Repair</h4>
+                    <p class="text-sm text-gray-500">Quick &amp; affordable repairs</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-bolt text-4xl text-orange-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Boiler / Combi-Boiler Repair</h4>
+                    <p class="text-sm text-gray-500">Residential &amp; commercial</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-snowflake text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Heat Pump Repair &amp; Install</h4>
+                    <p class="text-sm text-gray-500">Energy-efficient heating &amp; cooling</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-wind text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Air Conditioning Repair</h4>
+                    <p class="text-sm text-gray-500">Stay cool all summer long</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-fan text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Air Duct Cleaning</h4>
+                    <p class="text-sm text-gray-500">Improve indoor air quality</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm">
+                    <i class="fa-solid fa-ventilator text-4xl text-amber-500 mb-4"></i>
+                    <h4 class="font-semibold text-xl mb-1">Dryer Vent Cleaning</h4>
+                    <p class="text-sm text-gray-500">Safety &amp; efficiency</p>
+                </div>
+                <div class="service-card bg-white border rounded-3xl p-6 shadow-sm flex items-center justify-center text-center">
+                    <div>
+                        <p class="text-3xl font-bold text-orange-500">+ More</p>
+                        <p class="text-sm text-gray-500">Gas fireplaces • Maintenance plans</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#contact" class="inline-flex items-center text-lg font-semibold text-orange-600 hover:text-orange-700">
+                    Learn More <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED SERVICES -->
+    <div class="max-w-7xl mx-auto px-6 space-y-24 pb-20">
+        
+        <!-- Furnace Section -->
+        <div id="furnace" class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <h2 class="section-header text-4xl font-semibold mb-6">No Heat? No Problem!</h2>
+                <p class="text-xl leading-relaxed text-gray-700">
+                    Ignite Flame Services expert HVAC technicians will give your furnace the care that it needs. Trust us to fix any problem your furnace may have!
+                </p>
+                <div class="mt-8 text-gray-700 space-y-6">
+                    <p>At Ignite Flame Services we offer furnace installations, repair and annual furnace maintenance. All the products and services to keep your home comfortable and heated. Keep your carbon monoxide levels and energy bills low by having a Ignite Flame Services technician perform your next annual maintenance. Our 24 point inspection addresses any potential problem in your furnace system for the best safety and efficiency your furnace can deliver. At the end of the inspection, our technicians will provide you advice on ailing parts or possible improvements.</p>
+                </div>
+            </div>
+            <div class="md:col-span-5 bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 text-center">
+                <div class="text-7xl mb-6">🔥</div>
+                <h3 class="text-2xl font-semibold">Furnace Repair • Service • Installation</h3>
+                <p class="mt-4 text-gray-600">24/7 emergency service available</p>
+            </div>
+        </div>
+        
+        <!-- Boiler Section -->
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 text-center order-2 md:order-1">
+                <div class="text-7xl mb-6">🧱</div>
+                <h3 class="text-2xl font-semibold">Boiler &amp; Combi-Boiler Experts</h3>
+            </div>
+            <div class="md:col-span-7 order-1 md:order-2">
+                <h2 class="section-header text-4xl font-semibold mb-6">Boiler Maintenance &amp; Installation</h2>
+                <p class="text-xl leading-relaxed text-gray-700">
+                    Keeping your boiler unit in good working condition, so that it is operating safely and efficiently requires basic system maintenance performed at regular intervals. Scheduling these regular maintenance appointments helps your boiler work at optimal efficiency saving you time and money in the long run. As one of the most respected, qualified, and experienced names in the industry and Port Coquitlam, BC you can trust Ignite Flame Services to provide the best boiler repair the Greater Vancouver region has to offer. We offer both residential boiler installation and repairs as well as commercial boiler services.
+                </p>
+                <p class="mt-6 text-gray-700">
+                    An improper boiler installation can be extremely dangerous, resulting in serious injury and major damage. It is imperative that it be performed by a highly-trained and certified professional. All Ignite Flame Services technicians are qualified with the knowledge and ability to perform a professional analysis of the home or building layout, engineer the system to exact specifications, accurately adjust the pressure, and ensure water lines are of the appropriate size.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Tankless / Hot Water -->
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <h2 class="section-header text-4xl font-semibold mb-6">Interested in an On-Demand Hot Water Heater?</h2>
+                <p class="text-xl leading-relaxed text-gray-700">
+                    Trust the experts at Ignite Flame Services to give your home the care that it needs when it comes to anything heating related. We can help repair your existing on-demand hot water heater or help install a brand new tankless hot water heater 7 days a week!
+                </p>
+                <div class="mt-8 grid grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-medium text-lg">Hot Water Tank Installation</h4>
+                        <p class="text-sm text-gray-500">Tank &amp; tankless systems</p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-lg">Hot Water Heater Repair</h4>
+                        <p class="text-sm text-gray-500">Hot Water Tank Replacement</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-gray-700">
+                    Heating water accounts for up to 30% of the average home’s energy budget. Therefore, it is extremely important to have a system that is running efficiently to minimize your costs. A tankless water heater is usually more energy efficient than a storage tank water heater, since it eliminates the continuous standby energy loss from a storage tank making them a great option for remote locations such as work shops or cottages. These systems can be quite efficient overall, but only optimal when installed and used correctly to provide you on-demand hot water and reduce your energy bills.
+                </p>
+                <p class="mt-6 text-gray-700">
+                    Installing a hot water tank isn’t rocket science, but there’s an art to it: to ensure proper drainage, safe water heater pressure, and venting of combustion byproducts, a qualified Ignite Flame Technician knows best. Entrusting the job to a reputable and licensed installer will also pull the required municipal gas permit and call for an inspection is the best way to guarantee a job well done.
+                </p>
+                <p class="mt-6 text-gray-700">
+                    A hot water tank (also known as a hot water heater) is suitable for average-use demands for 8-10 years. To avoid mould, mildew, costly renovations, and sky-high insurance premiums—or a flooded basement as a result of a leaking hot water tank—homeowners should begin budgeting for a replacement tank after it has been in service for about eight years.
+                </p>
+                <p class="mt-6 text-gray-700">
+                    There are many signs that your hot water tank may need replacing including its age, if it is rumbling when operating or making noise, if you can see leaks, or if you are running out of hot water! If your showers are cold before you are done, you likely need a replacement. A visit from one of our qualified technicians to inspect your hot water tank will also help determine if a replacement is required.
+                </p>
+            </div>
+            <div class="md:col-span-5 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-10 flex flex-col justify-center">
+                <div class="text-6xl mb-8">🚿</div>
+                <h3 class="text-3xl font-semibold">Tankless Hot Water Systems</h3>
+                <p class="text-lg mt-3">Endless hot water. Lower energy bills.</p>
+            </div>
+        </div>
+        
+        <!-- Heat Pump & AC -->
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5 bg-gradient-to-br from-sky-50 to-blue-50 rounded-3xl p-8 text-center">
+                <div class="text-7xl mb-6">❄️🔥</div>
+                <h3 class="text-3xl font-semibold">Beat the Heat &amp; the Chill</h3>
+                <p class="text-blue-700">Heat Pump &amp; Air Conditioning Experts</p>
+            </div>
+            <div class="md:col-span-7">
+                <p class="text-xl leading-relaxed text-gray-700">
+                    Ignite Flame Services expert HVAC technicians will give your heat pump the care that it needs. Trust us to fix any problem your heat pump may have!
+                </p>
+                <div class="mt-8 space-y-6 text-gray-700">
+                    <p>Unlike a traditional heating system an air source heat pump, normally powered by electricity, is like having an air conditioner that can also run in reverse in cooler winter months to provide efficient heating for your home.</p>
+                    <p>Heat pumps provide the option of “dual-fuel” switching from natural gas to electricity (depending on what’s most efficient) saving you money on your gas and electric bills. Despite popular opinion, a heat pump and furnace go hand in hand: The furnace fan pushes air through the system in either the heating or cooling mode. On the coldest days – a rarity with BC’s mild climate – the furnace’s heating cycle automatically takes over to provide the back-up heat when needed.</p>
+                    <p class="text-lg font-medium">Air Conditioning Repair • Service • Installation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT US -->
+    <section id="about" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <span class="uppercase tracking-widest text-orange-500 font-semibold">About Ignite Flame Services</span>
+                    <h2 class="text-4xl font-semibold mt-2 mb-8">Your Trusted Local HVAC Partner Since 2005</h2>
+                    <div class="prose text-gray-700 text-lg">
+                        <p>Whether you need to install a new furnace or repair your existing one, Ignite Flame Services is here to help. We are proud to operate in the Greater Vancouver area, and we are dedicated to helping residents stay warm and comfortable all winter long.</p>
+                        <p>As consumers, we’re all afraid of paying too much for a product that doesn’t deliver or using a service that isn’t done right and with so many families in the Greater Vancouver area, residents need a reliable company they can count on. When you work with Ignite Flame Services, you are working with a company built on the foundation of getting what you pay for and understanding the value of doing things right the first time.</p>
+                        <p>For Greater Vancouver installation and maintenance, Ignite Flame Services is the one to call. Our technicians are some of the most professional experts in the lower mainland.</p>
+                        <p>We take pride in all the work we do and are available for our customers 24/7 so they can get in touch with us day or night. No answering machines, an actual person. We are dedicated to conducting great quality work!</p>
+                    </div>
+                    <a href="tel:6047161847" class="mt-8 inline-flex items-center text-orange-600 font-semibold text-lg">
+                        Call us for a free quote today <span class="ml-3 text-3xl">☎️</span> (604) 716-1847
+                    </a>
+                </div>
+                
+                <div class="bg-orange-50 border border-orange-100 rounded-3xl p-8 flex flex-col justify-center">
+                    <div class="flex justify-between items-baseline">
+                        <div>
+                            <div class="text-6xl font-semibold text-orange-500">19+</div>
+                            <p class="uppercase text-sm">Years Serving BC</p>
+                        </div>
+                        <div class="h-12 w-px bg-orange-200"></div>
+                        <div>
+                            <div class="text-6xl font-semibold text-orange-500">5/5</div>
+                            <p class="uppercase text-sm">Google Rating</p>
+                        </div>
+                        <div class="h-12 w-px bg-orange-200"></div>
+                        <div>
+                            <div class="text-6xl font-semibold text-orange-500">24/7</div>
+                            <p class="uppercase text-sm">Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-8 border-t text-center text-sm text-gray-500">
+                        Family-owned &amp; operated • Licensed Gas Fitters • TSSA Certified • Manufacturer-trained technicians
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREAS SERVED -->
+    <section id="areas" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-semibold">Proudly Serving the Greater Vancouver Area</h2>
+                <p class="text-orange-400 mt-2">Fast response times across the Lower Mainland</p>
+            </div>
+            
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Port Coquitlam</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Coquitlam</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Port Moody</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Maple Ridge</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Burnaby</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Surrey</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Langley</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Vancouver</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Pitt Meadows</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Delta</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">White Rock</div>
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl py-6 font-medium">Richmond</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="uppercase text-sm font-semibold text-orange-500">Expert Advice</span>
+                    <h2 class="text-4xl font-semibold">From Our Blog</h2>
+                </div>
+                <a href="#" class="text-orange-600 flex items-center font-medium">View all articles <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Blog Post 1 -->
+                <div class="border border-gray-100 rounded-3xl overflow-hidden">
+                    <div class="h-2 bg-gradient-to-r from-orange-400 to-amber-400"></div>
+                    <div class="p-8">
+                        <p class="text-xs text-gray-500 mb-2">5 October 2022 • Furnace Tips</p>
+                        <h3 class="text-2xl font-semibold leading-tight mb-6">How should I prepare my furnace for the upcoming cold season?</h3>
+                        <p class="text-gray-600 mb-8">Preparing your furnace for the fall and winter season in advance can help avoid any potential issues and disruptions in service when the cold comes in. Spend time over the next few weeks to ensure your furnace is running smoothly. Below are some tips from our experts at Ignite Flame Services to prepare your furnace for the cooler months.</p>
+                        
+                        <ol class="list-decimal pl-5 space-y-4 text-gray-700">
+                            <li><strong>Change the Air Filters</strong><br>One of the first steps… Dirty air filters can restrict airflow and put unnecessary strain on your furnace, leading to higher energy bills and potential repair issues.</li>
+                            <li><strong>Clean the Furnace and Air Ducts</strong><br>Another step… By conducting annual cleanings of your air ducts you can ensure that hot air can effectively reach the entire home.</li>
+                            <li><strong>Test the Furnace and Ignition Switch</strong><br>Once you’ve changed… If you have any issues starting the furnace, it is best to seek professional help.</li>
+                            <li><strong>Schedule a Maintenance Check</strong><br>It’s also a good idea to schedule a furnace tune-up with a qualified technician before winter.</li>
+                        </ol>
+                        
+                        <p class="mt-8 text-sm text-gray-500">Following these tips will help ensure that your furnace is ready to keep your home warm and comfortable during the cold months. Contact the Ignite Flame Services team today for further assistance.</p>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="border border-gray-100 rounded-3xl overflow-hidden">
+                    <div class="h-2 bg-gradient-to-r from-blue-400 to-cyan-400"></div>
+                    <div class="p-8">
+                        <p class="text-xs text-gray-500 mb-2">31 May 2022 • Choosing Experts</p>
+                        <h3 class="text-2xl font-semibold leading-tight mb-6">Which air conditioning and furnace experts to choose in Port Coquitlam?</h3>
+                        <p class="text-gray-600">Ignite Flame Services is a family-owned business that was established to meet the growing demand for quality heating and cooling services in the Greater Vancouver area. Ignite Flame offers quality HVAC services at competitive rates, with superior customer service.</p>
+                        
+                        <div class="mt-8 bg-gray-50 rounded-2xl p-6">
+                            <p class="font-medium mb-3">A Trusted Leader in Heating &amp; Cooling</p>
+                            <p class="text-gray-700">Ignite Flame Services offers a wide range of HVAC services including furnace repair, hot water tank repair, heat pump installation, gas fireplace repair and boiler repair. We have been in business since 2005 and have a proven track record of superior customer service and satisfaction.</p>
+                            
+                            <p class="mt-6 text-sm font-medium">We Offer:</p>
+                            <ul class="grid grid-cols-2 gap-x-6 text-sm mt-2 text-gray-600">
+                                <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-green-500"></i>New Furnace Installation</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-green-500"></i>Furnace Repair</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-green-500"></i>Hot Water Tank Installation</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-green-500"></i>Hot Water Tank Repair</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-green-500"></i>Heat Pump Installation</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check mr-2 text-green-500"></i>Gas Fireplace Installation</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="mt-8 text-xs text-gray-500">All of our technicians are certified by their manufacturers and we use genuine factory parts during all repairs and installations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FORM -->
+    <section id="contact" class="bg-orange-600 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-7">
+                <h2 class="text-5xl font-semibold mb-4">Call for a FREE QUOTE!</h2>
+                <p class="text-2xl text-orange-100">Call Us Today: <a href="tel:6047161847" class="font-mono text-4xl hover:underline">(604) 716-1847</a></p>
+                <p class="mt-8 text-xl max-w-md">Or fill out the form below and we'll get back to you with a quote ASAP!</p>
+                
+                <div class="mt-12 flex items-center gap-x-8">
+                    <div class="flex-1">
+                        <div class="flex justify-center items-center w-12 h-12 bg-white/20 rounded-2xl text-3xl">🚚</div>
+                        <p class="mt-4 font-medium">Same-day service in most cases</p>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-center items-center w-12 h-12 bg-white/20 rounded-2xl text-3xl">🛠️</div>
+                        <p class="mt-4 font-medium">Licensed, insured &amp; certified technicians</p>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-center items-center w-12 h-12 bg-white/20 rounded-2xl text-3xl">💰</div>
+                        <p class="mt-4 font-medium">Competitive pricing • No hidden fees</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Form -->
+            <div class="md:col-span-5 bg-white text-gray-900 rounded-3xl p-8 shadow-2xl">
+                <form action="https://formsubmit.co/your-email-here" method="POST" class="space-y-6">
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">YOUR NAME</label>
+                        <input type="text" name="name" required
+                               class="w-full border border-gray-200 focus:border-orange-300 rounded-2xl px-5 py-4 text-lg">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold mb-1 text-gray-500">PHONE</label>
+                            <input type="tel" name="phone" required
+                                   class="w-full border border-gray-200 focus:border-orange-300 rounded-2xl px-5 py-4 text-lg">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold mb-1 text-gray-500">EMAIL</label>
+                            <input type="email" name="email" required
+                                   class="w-full border border-gray-200 focus:border-orange-300 rounded-2xl px-5 py-4 text-lg">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">WHAT SERVICE DO YOU NEED?</label>
+                        <select name="service" class="w-full border border-gray-200 focus:border-orange-300 rounded-2xl px-5 py-4 text-lg">
+                            <option>Furnace Repair / Service</option>
+                            <option>Boiler Repair / Installation</option>
+                            <option>Tankless Hot Water Heater</option>
+                            <option>Heat Pump Installation</option>
+                            <option>Air Conditioning Service</option>
+                            <option>Air Duct / Dryer Vent Cleaning</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-xs font-semibold mb-1 text-gray-500">MESSAGE / DETAILS</label>
+                        <textarea name="message" rows="4"
+                                  class="w-full border border-gray-200 focus:border-orange-300 rounded-3xl px-5 py-4 resize-none"></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="_subject" value="New Quote Request from Ignite Flame Website">
+                    <button type="submit"
+                            class="w-full bg-orange-500 hover:bg-orange-600 text-white text-xl font-semibold py-6 rounded-3xl flex items-center justify-center gap-x-3">
+                        SEND MY FREE QUOTE REQUEST
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <p class="text-center text-xs text-gray-400">We respect your privacy • Response within 1 hour during business hours</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-y-12">
+                <div class="md:col-span-4">
+                    <div class="flex items-center gap-x-3 text-white mb-4">
+                        <div class="w-9 h-9 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl">🔥</div>
+                        <h2 class="text-3xl font-semibold tracking-tighter" style="font-family: 'Space Grotesk', sans-serif;">Ignite Flame Services</h2>
+                    </div>
+                    <p class="text-gray-400">Ignite Flame Heating and Air Conditioning LLP</p>
+                    <p class="text-gray-400 text-sm mt-8">Since 2005 • Greater Vancouver's trusted HVAC experts</p>
+                    <p class="mt-8 text-sm text-gray-400 flex items-center"><i class="fa-solid fa-phone mr-2"></i> (604) 716-1847</p>
+                    <p class="text-xs text-gray-500 mt-12">© 2026 Ignite Flame Services • All Rights Reserved</p>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <p class="uppercase text-xs font-semibold mb-4">Quick Links</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#areas" class="hover:text-white">Service Areas</a></li>
+                        <li><a href="#blog" class="hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <p class="uppercase text-xs font-semibold mb-4">Services</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Furnace Repair &amp; Install</li>
+                        <li>Boiler Service</li>
+                        <li>Tankless Water Heaters</li>
+                        <li>Heat Pumps</li>
+                        <li>Air Conditioning</li>
+                        <li>Duct &amp; Vent Cleaning</li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-4">
+                    <div class="bg-gray-800 rounded-3xl p-6 text-sm">
+                        <p class="font-semibold mb-3">We’re here when you need us most.</p>
+                        <p class="text-gray-400">24/7 emergency HVAC service for the entire Greater Vancouver region.</p>
+                        <a href="tel:6047161847" class="mt-8 block w-fit bg-white text-gray-900 font-semibold px-6 py-3 rounded-3xl text-base">Call Now → (604) 716-1847</a>
+                    </div>
+                    <p class="text-xs mt-8 text-gray-400">Port Coquitlam, BC • Licensed Gas Fitters • TSSA Certified</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script initialization
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        content: [],
+                        theme: {
+                            extend: {},
+                        },
+                        plugins: [],
+                        ...userConfig,
+                    }
+                },
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu')
+            const icon = document.getElementById('mobile-menu-icon')
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden')
+                icon.classList.replace('fa-bars', 'fa-xmark')
+            } else {
+                menu.classList.add('hidden')
+                icon.classList.replace('fa-xmark', 'fa-bars')
+            }
+        }
+        
+        // Run initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeTailwind()
+            console.log('%c✅ Ignite Flame Services website loaded successfully!', 'background:#f59e0b; color:#fff; padding:4px 8px; border-radius:4px; font-weight:600')
+        })
+        
+        // Fake form success message
+        document.addEventListener('submit', function(e) {
+            if (e.target.tagName === 'FORM') {
+                setTimeout(() => {
+                    alert("✅ Thank you! Your free quote request has been received. An Ignite Flame technician will contact you shortly.")
+                }, 800)
+            }
+        })
+    </script>
+</body>
+</html>
